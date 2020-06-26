@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài tập form</title>
+        <link rel="stylesheet" type="text/css" href="Form.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Bảng khảo sát đánh giá trình độ</h1>
+            <p id="description">Cảm ơn bạn đã bỏ thời gian giúp chúng tôi cải thiện tốt hơn</p>
+        </header>
+        <div class="container">
+            <form action="#" id="survey-form">
+                <div class="form-control">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-control">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-control">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" min="10" max="99" name="age" id="number" placeholder="Enter your age">
+                </div>
+                <div class="form-control">
+                    <label for="dropdown">Vai trò nghề nghỗng của bạn ra sao: </label>
+                    <select id="dropdown">
+                        <option value="hssv" default>Học sinh, sinh viên</option>
+                        <option value="fulltime">Full time</option>
+                        <option value="freelancer">Freelancer</option>
+                        <option value="no">Không muốn đề cập</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    Bạn có hay gặp gỡ trao đổi với bạn bè không
+                    <label>
+                        <input type="radio" name="friend" value="y">Có
+                    </label>
+                    <label>
+                        <input type="radio" name="friend"value="n">Không
+                    </label>
+                    <label>
+                        <input type="radio" name="friend" checked value="noanswer">Hên xui
+                    </label>
+                </div>
+                <div class="form-control">
+                    Bạn muốn cái thiện kĩ năng gì của bạn:
+                    <label><input type="checkbox" value="#" name="improve">Front-end Projects</label>
+                    <label><input type="checkbox" value="#" name="improve">Back-end Projects</label>
+                    <label><input type="checkbox" value="#" name="improve">Data Visualization</label>
+                    <label><input type="checkbox" value="#" name="improve">Challenges</label>
+                    <label><input type="checkbox" value="#" name="improve">Open Source Community</label>
+                    <label><input type="checkbox" value="#" name="improve">Gitter help rooms</label>
+                    <label><input type="checkbox" value="#" name="improve">Videos</label>
+                    <label><input type="checkbox" value="#" name="improve">City Meetups</label>
+                    <label><input type="checkbox" value="#" name="improve">Wiki</label>
+                    <label><input type="checkbox" value="#" name="improve">Forum</label>
+                    <label><input type="checkbox" value="#" name="improve">Additional Courses</label>
+                </div>
+                <div class="form-control">
+                    Ý kiến bổ sung: 
+                    <textarea placeholder="Vui lòng để lại ý kiến tại đây" rows="4"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

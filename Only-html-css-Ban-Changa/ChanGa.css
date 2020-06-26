@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(60, 92%, 90%);
+}
+.page-wraper{
+    position: relative;
+    top: 60px;
+}
+#header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+#header-img img{
+    width: 60px;
+    height: auto;
+}
+#header-img{
+    display: flex;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+#nav-bar li{
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid;
+}
+#nav-bar li:hover{
+    background-color: rgba(151, 161, 0, 0.3);
+}
+#nav-bar ol{
+    line-height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+}
+.container{
+    margin: 30px;
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+.form-control{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.form-control input{
+    font-size: 1.2rem;
+    display: block;
+    margin: 20px auto;
+}
+.form-control input[type="submit"]{
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    background-color: hsla(22, 82%, 56%,0.8);
+}
+.form-control input[type="submit"]:hover{
+    background-color: hsla(22, 82%, 56%,1);
+}
+.SanPham__element{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-content: center;
+}
+.SanPham__element img{
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 160px;
+    grid-row: 1/3;
+    align-self: center;
+}
+.SanPham__element h3,p{
+    padding-left: 20px;
+}
+.SanPham__element h3{
+    font-family: 'Nunito', sans-serif;
+    align-self: flex-end;
+}
+#Clip{
+    margin-top: 50px;
+    display:flex;
+    position:relative;
+    justify-content: center;
+}
+#Gia{
+    font-family: 'Nunito', sans-serif;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.GiaContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid;
+    height: 150px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(146, 143, 143);
+}
+.GiaContent__title{
+    border-bottom: 1px solid;
+    padding: 5px;
+    background-color: white;
+    font-size: 1.4rem;
+}
+.GiaContent button{
+    background-color: rgba(9, 175, 9, 0.8);
+    font-size: 1.4rem;
+    padding: 10px;
+    border-width: 1px 0 0 0;
+    color: white;
+}
+.GiaContent button:hover{
+    background-color: rgba(9, 175, 9, 0.5);
+}
+footer{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: rgb(224, 218, 218);
+    text-align: right;
+    height: auto;
+}
+footer p, footer__a{
+    width: 100%;
+    text-align: right;
+}
+.footer__a{
+    margin: 10px 0;
+}
+@media (max-width: 590px ){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    #nav-bar li{
+        width: 33.3%;
+        background-color: white;
+    }
+    .page-wraper{
+        top: 120px;
+    }
+    .SanPham__element{
+        grid-template-rows: 100px auto auto;
+        grid-template-columns: 100%;
+        margin: 30px auto;
+        align-content: center;
+        padding: 0;
+    }
+    .SanPham__element h3, p, img{
+        padding: 0;
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+    .SanPham__element img{
+        max-height: 400px;
+        padding: 10px;
+    }
+    .SanPham__element h3{
+        text-align: center;        
+    }
+    #Gia{
+        flex-direction: column;
+        align-items: center;
+    }
+    .GiaContent{
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+@media (max-width: 400px){
+    #nav-bar{
+
+    }
+    #nav-bar ol{
+        height: 130px;
+        flex-direction: column;
+    }
+    #nav-bar li{
+        width: 100%;
+        padding: 0%;
+        height: 33.3%;
+        border-width: 1px 0;
+    }
+    .page-wraper{
+        top: 190px;
+    }
+}
